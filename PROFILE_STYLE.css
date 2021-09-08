@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+}
+a {
+    text-decoration: none;
+}
+.continer {
+    margin: auto;
+    width: 1000px;
+    overflow: auto;
+}
+nav {
+    height: 90px;
+    width: 100%;
+}
+.logo {
+    width: 70px;
+    height: 60px;
+    padding: 0 8px;
+    margin-top: 8px;
+}
+.navbar {
+    display: flex;
+}
+nav ul {
+    margin-left: 150px;
+}
+nav ul li {
+    margin: 0 5px;
+    line-height: 80px;
+    display: inline-block;
+}
+nav ul li a {
+    font-size: 16px;
+    padding: 7px 13px;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: tomato;
+    border: 3px dashed tomato;
+}
+.icons {
+    margin: 25px 0 0 170px;
+}
+.icons a {
+    margin: 8px;
+    color: rgb(68, 53, 53);
+}
+a:hover .fa-globe-asia {
+    color: #e1306c;
+}
+a:hover .fa-facebook {
+    color: #3b5998;
+}
+a:hover .fa-instagram {
+    color: #e1306c;
+}
+a:hover .fa-twitter {
+    color: #00acee;
+}
+
+.box {
+    display: flex;
+    margin-top: 2.5rem;
+}
+.txt {
+    width: 50%;
+    padding: 18px;
+}
+.txt h1 {
+    font-size: 50px;
+    color: #000;
+    font-weight: bold;
+}
+span{
+    color: rgb(105, 73, 73);
+}
+.txt p {
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgb(93, 95, 95);
+    font-weight: bold;
+}
+.btn button{
+    height: 30px;
+    width: 90px;
+    font-size: 20px;
+    color: #fff;
+    background: #e1306c;
+    border: 1px solid #e1306c;
+    margin-top: 10px;
+}
+.btn button:hover {
+    color: #000;
+    background: #00acee;
+    border-radius: 10px;
+    border: none;
+}
+.email-box {
+    margin-top: 20px;
+}
+.email-box input {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background: rgb(211, 210, 210);
+}
+.email-box button {
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border: 1px solid #3b5998;
+    background: #3b5998;
+}
+.email-box button:hover {
+    color: #000;
+    background: #00acee;
+    border-radius: 15px;
+    border: none;
+}
+.img img{
+    width: 400px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;    
+}

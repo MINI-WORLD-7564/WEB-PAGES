@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SLIDER</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "SLIDER_STYLE.css">
+        <link rel = "stylesheet" type = "text/css" href = "C:\Users\Shadik Hasan\Desktop\WEB PAGE\fontawesome-free-5.15.0-web\css/all.css">
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="image">
+                <img src="IMG/N1.jpg" alt="LOADING...">
+                <img src="IMG/B1.jpg" alt="LOADING...">
+                <img src="IMG/BI1.jpg" alt="LOADING...">
+                <img src="IMG/F1.jpg" alt="LOADING...">
+                <img src="IMG/FI1.jpg" alt="LOADING...">
+            </div>
+
+            <div onclick="slide_btn(-1)" class="slide left">
+                <span class="fas fa-angle-left"></span>
+            </div>
+
+            <div onclick="slide_btn(1)" class="slide right">
+                <span class="fas fa-angle-right"></span>
+            </div>
+
+
+            <div class="btn">
+                <span onclick="btn(1)"></span>
+                <span onclick="btn(2)"></span>
+                <span onclick="btn(3)"></span>
+                <span onclick="btn(4)"></span>
+                <span onclick="btn(5)"></span>
+            </div>
+        </div>
+
+
+        <script>
+            var indexValue = 1;
+            showImg(indexValue);
+            function btn(e) {showImg(indexValue = e);}
+            function slide_btn(e) {showImg(indexValue += e);}
+
+            function showImg (e) {
+                var i;
+                const img = document.querySelectorAll('img');
+                const slider = document.querySelectorAll('.slide_btn span');
+                
+                if(e > img.length){indexValue = 1}
+                if(e < 1){indexValue = img.length}
+
+                for (i = 0; i < img.length; i++) {
+                    img[i].style.display = "none";
+                }
+
+                /*for (i = 0; i < slider.length; i++) {
+                    slider[i].style.background = "red";
+                }*/
+
+                img[indexValue-1].style.display = "block";
+                //slider[indexValue-1].style.background = "white";
+            }
+        </script>
+
+    </body>
+</html>

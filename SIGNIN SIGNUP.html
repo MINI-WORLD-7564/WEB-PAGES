@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SIGNIN OR SIGNUP</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "SIGNIN SIGNUP-STYLE.css">
+        <link rel = "stylesheet" type = "text/css" href = "C:\Users\Shadik Hasan\Desktop\WEB PAGE\fontawesome-free-5.15.0-web\css/all.css">
+    
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="bg">
+                <div class="box signin">
+                    <h3>I ALREADY HAVE AN ACCOUNT...</h3>
+                    <button class="signin_btn">SIGN IN</button>
+                </div>
+
+                <div class="box signup">
+                    <h3>I DON'T HAVE ANY ACCOUNT...</h3>
+                    <button class="signup_btn">SIGN UP</button>
+                </div>
+            </div>
+            <div class="form_box">
+                <div class="form signin_form">
+                    <form>
+                        <h3>SIGN IN</h3>
+                        <input type="text" name="uname" placeholder="USER NAME OR EMAIL..." required>
+                        <input type="password" name="password" placeholder="PASSWORD..." required>
+                        <input type="submit" placeholder="SIGN IN">
+                        <a href="#" class="forget_pass">FORGET PASSWORD!!!</a>
+                    </form>
+                </div>
+
+                
+                    <div class="form signup_form">
+                        <form>
+                            <h3>SIGN UP</h3>
+                            
+                            <input type="text" name="fname" placeholder="FIRST NAME..." required>
+                            <input type="text" name="lname" placeholder="LAST NAME..." required>
+                            <input type="text" name="uname" placeholder="USER NAME..." required>
+                            <input type="email" name="email" placeholder="EMAIL..." required>
+                            <input type="integer" name="pnumber" placeholder="PHONE NUMBER..." required>
+                            <input type="date" name="dob" placeholder="DATE OF BIRTH..." required>
+                            <input type="password" name="password" placeholder="ENTER PASSWORD..." required>
+                            <input type="password" name="rpassword" placeholder="RE-TYPE PASSWORD..." required>
+                            <label>SIGN UP AS: </label><select><option value="">SELECT</option>
+                                <option value="student">STUDENT</option>
+                                <option value="teacher">TEACHER</option>
+                            </select> 
+                            
+                            <!--<input type="checkbox" class="check_box" name="checkbox"> I AGREE WITH <a href="#">TREAMS & CONDITIONS</a>-->
+                            
+                            <input type="submit" placeholder="SIGN UP">
+
+                        </form>
+                    </div>
+
+            </div>
+        </div>
+
+
+        <script>
+            const signin_btn = document.querySelector('.signin_btn');
+            const signup_btn = document.querySelector('.signup_btn');
+            const form_box = document.querySelector('.form_box');
+            const body = document.querySelector('body')
+
+            signup_btn.onclick = function () {
+                form_box.classList.add('active')
+                body.classList.add('active')
+            }
+
+            signin_btn.onclick = function () {
+                form_box.classList.remove('active')
+                body.classList.remove('active')
+            }
+        </script>
+
+
+    </body>
+</html>
